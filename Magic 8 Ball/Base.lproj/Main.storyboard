@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XgV-OP-HgV">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" red="0.36268882703863436" green="0.81097801574061601" blue="0.92145264149999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s63-vg-H7C">
+                                <rect key="frame" x="16" y="38" width="297" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="SCo-h8-hZR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.90956880142603502" blue="0.17934215177039925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="w5E-34-hJG">
+                                <rect key="frame" x="-69" y="158" width="458" height="211"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPi-08-ZR2">
+                                <rect key="frame" x="16" y="419" width="288" height="71"/>
+                                <color key="backgroundColor" red="0.61666124750483053" green="1" blue="0.68829990411989783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="sMR-ag-dgw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="38"/>
+                                <state key="normal" title="A S K">
+                                    <color key="titleColor" red="0.05469961863616013" green="0.29097299543870991" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.90956880139999996" blue="0.17934215179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s63-vg-H7C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7Sd-N6-ugv"/>
+                            <constraint firstItem="dPi-08-ZR2" firstAttribute="top" secondItem="w5E-34-hJG" secondAttribute="bottom" constant="50" id="8AR-qK-Xgt"/>
+                            <constraint firstItem="w5E-34-hJG" firstAttribute="centerX" secondItem="dPi-08-ZR2" secondAttribute="centerX" id="Ak0-GQ-kOP"/>
+                            <constraint firstItem="XgV-OP-HgV" firstAttribute="centerX" secondItem="w5E-34-hJG" secondAttribute="centerX" id="FOV-6b-Cg8"/>
+                            <constraint firstItem="XgV-OP-HgV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LdS-2a-hHM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dPi-08-ZR2" secondAttribute="bottom" constant="78" id="Rll-Kg-WM3"/>
+                            <constraint firstItem="w5E-34-hJG" firstAttribute="top" secondItem="s63-vg-H7C" secondAttribute="bottom" constant="72" id="V4J-J7-Wt4"/>
+                            <constraint firstItem="s63-vg-H7C" firstAttribute="leading" secondItem="dPi-08-ZR2" secondAttribute="leading" id="eah-3S-3Ah"/>
+                            <constraint firstItem="XgV-OP-HgV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hyY-yH-NV2"/>
+                            <constraint firstAttribute="trailing" secondItem="XgV-OP-HgV" secondAttribute="trailing" id="iZ3-EJ-Npl"/>
+                            <constraint firstItem="XgV-OP-HgV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pap-Dz-9OE"/>
+                            <constraint firstItem="s63-vg-H7C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="xjR-ew-Phe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="w5E-34-hJG" id="uQW-aX-UyK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.25" y="20.070422535211268"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball1" width="457.5" height="410.5"/>
+    </resources>
+</document>
